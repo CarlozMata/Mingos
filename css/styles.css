@@ -1,0 +1,48 @@
+body {
+    margin: 0px;
+    padding: 0px;
+} 
+/*NAV*/
+nav {
+    display: flex;
+    width:100%;
+    min-height: 40px; 
+    background-color: red;
+    justify-content: center;
+} 
+.nav-box { 
+    width: 50%;
+    background-color: yellow;
+}
+nav ul {
+    display: flex;
+    text-align: center;
+    list-style: none;
+    gap: 20px;
+    font-weight: bold;
+    justify-content:space-between;
+}
+/*HOME*/
+.home {
+    background-color: aqua;
+}
+/*MARKETING*/
+.marketing {
+    background-color: yellowgreen;
+}
+/*FRANCHISE*/
+.franchise {
+    background-color: rebeccapurple;
+}
+/*UBICATION*/
+.ubication {
+    background-color: blue;
+}
+/*CONTACT*/
+.contact {
+    background-color:rosybrown;
+}
+/*FOOTER*/
+footer {
+    background-color: magenta;
+}
