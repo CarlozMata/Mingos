@@ -1,6 +1,8 @@
 * {
     margin: 0px;
     padding: 0px;
+    border: 1px solid yellow;
+
 } 
 body {
     font-family: 'Parisienne', cursive;
@@ -15,7 +17,7 @@ nav {
     background-color: rgb(245, 201, 80);
 }  
 .nav-box { 
-    width: 80%;
+    width: 90%;
 }
 nav ul {
     display: flex;
@@ -23,7 +25,7 @@ nav ul {
     list-style: none;
     gap: 20px;
     font-weight: bold;
-    justify-content:space-between;
+    justify-content:space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -68,11 +70,14 @@ nav ul :hover {
     border: 1px solid white; 
     width: 320px;
     height: 320px;
-}
+
+} 
 .events ul {
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    gap:10px;
 
 }
 .events-btn {
@@ -86,6 +91,7 @@ nav ul :hover {
 /*MARKETING*/
 .marketing {
     border: 1px solid black;
+    background-color: orange;
 }
 .marketing-box {
 
@@ -97,10 +103,14 @@ nav ul :hover {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    justify-content: center;
+    gap:10px;
 }
 .marketing-gallery img {
+    border: 1px solid white; 
     width: 320px;
-    height: 320px;}
+    height: 320px;
+}
 /*FRANCHISE*/
 .franchise {
     border: 1px solid black;
