@@ -12,9 +12,8 @@ nav {
     display: flex;
     width:100%;
     justify-content: center;
-    border: 1px solid black;
     background-color: rgb(245, 201, 80);
-} 
+}  
 .nav-box { 
     width: 80%;
 }
@@ -46,44 +45,62 @@ nav ul :hover {
 }
 /*EVENTS*/
 .events {
-    background-color: yellow;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    background-color: yellow;
 }  
 .events-box {
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
     background-color: red;
-
 }
 .events-gallery {
     display: flex;
-    justify-items: center;
+
+    width: 80%;
+    background-color: orange;
+}
+.events-gallery2 {
 }
 .events-gallery img {
+    border: 1px solid white; 
     width: 320px;
     height: 320px;
 }
-.events-box ul {
-    background-color: aqua;
+.events ul {
     display: flex;
     flex-wrap: wrap;
-    gap:20px;
     list-style: none;
-    align-items: center;
+
 }
 .events-btn {
     display: flex;
     background-color: paleturquoise;
     justify-content: center;
     gap: 20px;
-    width: 90%;
+    width: 50%;
     height: 40px;
 }
 /*MARKETING*/
 .marketing {
     border: 1px solid black;
 }
+.marketing-box {
+
+}
+.marketing-gallery {
+
+}
+.marketing-gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.marketing-gallery img {
+    width: 320px;
+    height: 320px;}
 /*FRANCHISE*/
 .franchise {
     border: 1px solid black;
