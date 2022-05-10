@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    border: 1px solid yellow;
+/*    border: 1px solid yellow;
 */
 } 
 body {
@@ -46,15 +46,25 @@ nav ul :hover {
 }
 
 
-/*HOME*/
+/*BANNER*/
 .banner {
+    width: 100%;
+    display: inline;
+
+
+}
+.banner-box{
+    display: flex;
+    max-width: 1024px;
+} 
+.banners {
+    display:flex;
     width:100%;
-    height: 500px;
+    height: 500px; 
     animation: banner 20s infinite linear alternate;
     background-size: 100% 100%; 
     position: relative;
-    display:flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
 }
 
