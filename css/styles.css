@@ -77,7 +77,6 @@ nav ul :hover {
     border: 1px solid white; 
     width: 320px;
     height: 320px;
-
 } 
 .events ul {
     justify-content: center;
@@ -142,6 +141,8 @@ nav ul :hover {
 .franchise-box ul {
     padding: 20px;
     display: flex;
+    gap:25px;
+    flex-wrap: wrap;
 }
 /*UBICATION*/
 .locations {
@@ -179,4 +180,25 @@ footer {
     width:100%;
     height: 400px;
 }   
+.events-gallery img {
+    border: 1px solid white; 
+    width: 150px;
+    height: 150px;
+}
+.marketing-box {
+    background-color:aliceblue;
+}
+.marketing-box-text{
+    width: 100%;
+    background-color: violet;
+}
+.marketing-box-gallery {
+    width: 100%;
+    background-color: lawngreen;
+}
+.marketing-box-gallery-g img {
+    border: 1px solid white; 
+    width: 105px;
+    height: 105px;
+}
 }
