@@ -13,8 +13,10 @@ body {
 nav {
     display: flex;
     width:100%;
+    height: 130px;
     justify-content: center;
     background-color: #FFD736;
+    align-items: center;
 }  
 .nav-box { 
     align-content: center;
@@ -32,7 +34,7 @@ nav ul {
 }
 nav img {
     width: 100px;
-    height: 40px;
+    height: 80px; 
 }
 nav ul :hover {
     cursor: pointer;
@@ -47,37 +49,49 @@ nav ul :hover {
 
 
 /*BANNER*/
-.banner {
-    width: 100%;
-    display: inline;
-
+.main {
+    display: flex;
 
 }
-.banner-box{
-    display: flex;
-    max-width: 1024px;
+.left {  
+    background-color: red;
+    width:10%;
+}
+.right {
+    background-color: rebeccapurple;
+    width: 10%;
 } 
 .banners {
-    display:flex;
-    width:100%;
-    height: 500px; 
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 80%; 
+    height: 520px; 
     animation: banner 20s infinite linear alternate;
+    object-fit: cover; 
     background-size: 100% 100%; 
-    position: relative;
-    justify-content:center;
-    align-items: center;
+    animation-delay: ;
+    animation-direction: ;
+    animation-fill-mode: ;
+} 
+.banners img {
+    object-fit: cover;
 }
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 520px;}
 
 @keyframes banner
 { 
     0%, 20% {
         background-image: url(../img/fotos/background1.jpg);
-    } 
-    25%, 50% {
+    }   
+    25%, 50% {  
         background-image: url(../img/fotos/background2.jpg);
-    } 
+    }  
     55%, 70% {
-        background-image: url(../img/fotos/background3.jpg);
+        background-image: url(../img/fotos/background3.jpg); 
     } 
     75%, 100% {
         background-image: url(../img/fotos/background4.jpg);
@@ -235,3 +249,8 @@ footer {
     height: 105px;
 }
 }
+/*http://www.heladeriacadore.com.ar/index.html Banner 
+https://icecreamcitys.com/ Estructura
+
+https://lamichoacanaweb.com/landing/franquicias-la-michoacana-es/#contacto-2 El resto
+*/
