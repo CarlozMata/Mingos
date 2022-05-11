@@ -13,7 +13,7 @@ body {
 nav {
     display: flex;
     width:100%;
-    height: 130px;
+    height: 100px;
     justify-content: center;
     background-color: #FFD736;
     align-items: center;
@@ -33,25 +33,12 @@ nav ul {
     flex-wrap: wrap;
 }
 nav img {
-    width: 100px;
-    height: 80px; 
+    width: 200px;
+    height: 90px; 
 }
 nav ul :hover {
     cursor: pointer;
     color: gray;
-}
-
-.box {
-    display: flex;
-    width:90%;
-    padding: 20px;
-}
-
-
-/*BANNER*/
-.main {
-    display: flex;
-
 }
 .left {  
     background-color: red;
@@ -61,26 +48,25 @@ nav ul :hover {
     background-color: rebeccapurple;
     width: 10%;
 } 
+
+/*BANNER*/
+.main {
+    display: flex;
+
+}
 .banners {
     display: flex;
     justify-content: center;
     justify-items: center;
-    width: 80%; 
+    width: 100%; 
     height: 520px; 
     animation: banner 20s infinite linear alternate;
     object-fit: cover; 
     background-size: 100% 100%; 
-    animation-delay: ;
-    animation-direction: ;
-    animation-fill-mode: ;
 } 
 .banners img {
     object-fit: cover;
 }
-img {
-    object-fit: cover;
-    width: 100%;
-    height: 520px;}
 
 @keyframes banner
 { 
@@ -107,15 +93,13 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 100%;
     padding: 20px;
 }
 .events-gallery {
     display: flex; 
     justify-content: center;
-    width: 80%;
-}
-.events-gallery2 {
+    width: 100%;
 }
 .events-gallery img {
     border: 1px solid white; 
@@ -128,7 +112,6 @@ img {
     flex-wrap: wrap;
     list-style: none;
     gap:10px;
-
 }
 .events-btn {
     display: flex;
@@ -145,6 +128,7 @@ img {
 }
 .marketing-box{
     display: flex;
+    width: 100%;
 }
 .marketing-box-text {
     display: flex;
@@ -183,6 +167,7 @@ img {
 }
 .franchise-box {
     display: flex;
+    width: 100%;
     flex-direction: column;
 }
 .franchise-box ul {
@@ -200,12 +185,17 @@ img {
 .locations-box {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 /*CONTACT*/
 .contact {
     display: flex;
     justify-content: center;
     background-color: rgb(243, 234, 152);
+}
+.contact-box {
+    width: 100%;
+
 }
 /*FOOTER*/
 footer {
@@ -251,6 +241,8 @@ footer {
 }
 /*http://www.heladeriacadore.com.ar/index.html Banner 
 https://icecreamcitys.com/ Estructura
+
+https://heladosricco.com
 
 https://lamichoacanaweb.com/landing/franquicias-la-michoacana-es/#contacto-2 El resto
 */
