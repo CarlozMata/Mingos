@@ -13,7 +13,6 @@ body {
 .fab {
     padding: 20px;
     font-size: 30px;
-    width: 30px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
@@ -22,8 +21,11 @@ body {
     
     .fab:hover {
     opacity: 0.7;
-    }
-    
+    } 
+    .fab-whatsapp2:hover {
+        opacity: 0.7;
+        }
+        
     .fa-whatsapp {
     color: white;
     margin-top: 100px;
@@ -121,6 +123,7 @@ nav ul :hover {
         background-image: url(../img/fotos/background4.jpg);
     }
 }
+
 /*EVENTS*/
 .events {
     display: flex;
