@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    border: 1px solid yellow;
+/*    border: 1px solid yellow;
 */
 } 
 body {
@@ -165,6 +165,36 @@ nav ul :hover {
     display: flex;
     background-color: #FFD736;
     justify-content: center;
+}
+#lightgallery {
+    display: flex;
+}
+#lightgallery a {
+    display: inline-block;
+}
+#lightgallery a img {
+    width: 100%;
+}
+.lg-actions .lg-prev:after {
+    content: "◀" !important;
+    color: #FFD736;
+ 
+}
+.lg-actions .lg-next:before {
+    content: "▶" !important;
+    color: #FFD736;
+}
+.lg-toolbar .lg-download:after {
+    display: none;
+/*    content: "⮯" !important;
+    color: #FFD736;*/
+}
+.lg-toolbar .lg-close:after {
+    content: "☒" !important;
+    color: #FFD736;
+}
+#lg-counter {
+    color: #FFD736;
 }
 .marketing-box{
     display: flex;
