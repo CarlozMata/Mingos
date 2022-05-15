@@ -18,20 +18,15 @@ body {
     margin: 5px 2px;
     border-radius: 50%;
     }
-       
-nav {
-    display: flex;
-    justify-content: flex-end;
-}
 nav a {
     margin: 0px;
     position: fixed;
     margin-right: -85%;
     margin-bottom: -160vh;
 }
-nav img:hover{
+a img:hover{
     opacity: 60%;
-    width: 70px;
+    width: 70px; 
     height: 70px;
 }
 .img-whatsapp {
@@ -115,16 +110,29 @@ nav ul :hover {
 .events {
     display: flex;
     background-color: rgb(243, 234, 152);
+    width: 100%;
 }
 .events-box {
     display: flex;
+    flex-direction: column;
+    justify-items: center;
     justify-content: center;
     width: 100%;
 }
-.events img{ 
-    padding: 10%;
+.events-box2 {
+    display: flex;
+    justify-content: center;
+}
+.events img{       
     width: 80%;
-}   
+}
+.events-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
 /*MARKETING*/
 .marketing {
     display: flex;
@@ -173,12 +181,19 @@ nav ul :hover {
 .fixed-size.lg-outer .lg-img-wrap {
   padding: 12px;
 }
-#captions h4 {
+.lg-sub-html{
     color: #FFD736;
 }
 #captions img {
     width: 200px;
     height: 200px;
+}
+.marketing-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
 }
 /*FRANCHISE*/
 .franchise {
@@ -217,7 +232,7 @@ nav ul :hover {
 .contact-box {
     width: 100%;
 
-}
+} 
 /*FOOTER*/
 footer {
     background-color: #232457;
