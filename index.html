@@ -17,10 +17,10 @@
 <nav>
     <div class="nav-box">
         <ul class="nav-ul">
-            <li><img class="imgs" src="./img/logotipomingos2.png"></li>
+            <li><img class="img-logo" src="./img/logotipomingos2.png"></li>
         </ul>
     </div> 
-    <a  class=fab-whatsapp2" href="https://wa.me/+529931079507/?text=Hola,%20visite%20visite%20su%20Sitio%20web" target="_blank"><img class="img-whatsapp" src="./img/logo-wasap.png" width="50" height="50"></a>
+    <a class=whatsapp" href="https://wa.me/+529931079507/?text=Hola,%20visite%20visite%20su%20Sitio%20web" target="_blank"><img class="img-whatsapp" src="./img/logo-wasap.png" width="50" height="50"></a>
 </nav>
 <!--BANNER-->
 <section>
@@ -32,43 +32,43 @@
 </section> 
 <!--EVENTS-->
 <section class="events">
-    <aside class="left"></aside>
+    <aside class="left"></aside>       
     <div class="events-box">
-    <h1>Contratanos para tus Eventos</h1>
-    <h2>Y dale un toque Original.</h2>
-    <div class="events-invitation">
-        <li><img src="./img/fotos/eventos3.jpg" alt="Fotos de eventos"></li>
-    </div> 
-    <div class="events-gallery col s12 m4 l3 row galeria">
-        <img class="materialboxed" width="250" src="./img/fotos/eventos1.jpg" alt="Fotos de Eventos" data-caption="hla">
-        <img class="materialboxed" src="./img/fotos/eventos2.jpg" alt="Fotos de Eventos">
-        <img src="./img/fotos/eventos3.jpg" alt="Fotos de eventos">
-    </div>
-    <div class="events-btn">
-    </div> 
+        <img src="./img/fotos/eventos1.jpg">
     </div>
     <aside class="right"></aside>
 </section> 
 <!--MARKETING-->
 <section class="marketing">
     <aside class="left"></aside>
-    <div class="marketing-box-gallery-g">
-    <div id="lightgallery">
-        <a href="./img/fotos/productos1.jpg">
-            <img src="./img/fotos/productos1.jpg" alt="Foto..">
+    <div class="marketing-box">
+        <h1>Prueba nuestros productos</h1>
+        <div id="caption2" style="display:none">
+            <h4>Producto 2</h4><p>Este es el producto 2</p>
+        </div>
+        <div class="caption3" style="display:none">
+            <h4>Producto 3</h4><p>Este es el producto 3.</p>
+        </div>      
+        <div class="caption4" style="display:none">
+            <h4>Producto 4</h4><p>Este es el producto 4.</p>
+        </div>      
+
+        <div id="captions">
+            <a href="./img/fotos/productos1.jpg" data-sub-html="<h4>Producto 1</h4><p>Este es el producto 1.</p>" >
+                <img src="./img/fotos/productos1.jpg" />
+            </a>
+            <a href="./img/fotos/productos2.jpg" data-sub-html="#caption2">
+                <img src="./img/fotos/productos2.jpg" />
+            </a>
+            <a href="./img/fotos/productos3.jpg" data-sub-html=".caption3">
+            <img src="./img/fotos/productos3.jpg" />
         </a>
-        <a href="./img/fotos/productos2.jpg">
-            <img src="./img/fotos/productos2.jpg" alt="Fotos de Eventos">
-        </a> 
-        <a href="./img/fotos/productos5.jpg" alt="hola">
-            <img src="./img/fotos/productos5.jpg" alt="Fotos de Eventos">
+        <a href="./img/fotos/productos4.jpg" data-sub-html=".caption4">
+            <img src="./img/fotos/productos4.jpg" />
         </a>
-        <a href="./img/fotos/productos4.jpg">
-            <img src="./img/fotos/productos4.jpg" alt="Fotos de Eventos">
-        </a>
+        </div>
     </div>
-    </div>
-    <aside class="left"></aside>
+    <aside class="right"></aside>
 </section>
 
 <!--FRANCHISE-->
@@ -134,7 +134,8 @@
 <script src="./main.js"></script>
 <script src="./lightgallery.min.js"></script>
 <script type="text/javascript">
-    lightGallery(document.getElementById('lightgallery')); 
+    lightGallery(document.getElementById('captions')); 
+
 </script>
 </body>
 </html>

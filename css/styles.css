@@ -10,29 +10,15 @@ body {
     font-family: 'Lato', sans-serif;
 }
 /*WHATSAPP*/
-.fab {
+.whatsapp {
     padding: 20px;
     font-size: 30px;
-    text-align: center;
+    text-align: center; 
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 50%;
     }
-    
-    .fab:hover {
-    opacity: 0.7;
-    } 
-    .fab-whatsapp2:hover {
-        opacity: 0.7;
-        }
-        
-    .fa-whatsapp {
-    color: white;
-    margin-top: 100px;
-    }
-    .fab-whatsapp2 {
-        margin-top: 10px;
-    }
+       
 nav {
     display: flex;
     justify-content: flex-end;
@@ -42,6 +28,11 @@ nav a {
     position: fixed;
     margin-right: -85%;
     margin-bottom: -160vh;
+}
+nav img:hover{
+    opacity: 60%;
+    width: 70px;
+    height: 70px;
 }
 .img-whatsapp {
     display: flex;
@@ -82,11 +73,11 @@ nav ul :hover {
 }
 .left {  
     background-color: red;
-    width:20%;
+    width:25%;
 }
 .right {
     background-color: rebeccapurple;
-    width: 20%;
+    width: 25%;
 } 
 
 /*BANNER*/
@@ -101,12 +92,8 @@ nav ul :hover {
     width: 100%; 
     height: 520px; 
     animation: banner 20s infinite linear alternate;
-    object-fit: cover; 
-    background-size: 100% 100%; 
+    background-size: 100% 100%;
 } 
-.banners img {
-    object-fit: cover;
-}
 
 @keyframes banner
 { 
@@ -115,7 +102,7 @@ nav ul :hover {
     }   
     25%, 50% {  
         background-image: url(../img/fotos/background2.jpg);
-    }  
+        }  
     55%, 70% {
         background-image: url(../img/fotos/background3.jpg); 
     } 
@@ -127,53 +114,22 @@ nav ul :hover {
 /*EVENTS*/
 .events {
     display: flex;
-    justify-content: center;
     background-color: rgb(243, 234, 152);
-}  
+}
 .events-box {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-.events-gallery {
-    display: flex; 
     justify-content: center;
     width: 100%;
 }
-.events-gallery img {
-    border: 1px solid white; 
-    width: 320px;
-    height: 320px;
-} 
-.events ul {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    gap:10px;
-}
-.events-btn {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    width: 50%;
-    height: 40px;
-}
+.events img{ 
+    padding: 10%;
+    width: 80%;
+}   
 /*MARKETING*/
 .marketing {
     display: flex;
     background-color: #FFD736;
     justify-content: center;
-}
-#lightgallery {
-    display: flex;
-}
-#lightgallery a {
-    display: inline-block;
-}
-#lightgallery a img {
-    width: 100%;
 }
 .lg-actions .lg-prev:after {
     content: "◀" !important;
@@ -186,8 +142,8 @@ nav ul :hover {
 }
 .lg-toolbar .lg-download:after {
     display: none;
-/*    content: "⮯" !important;
-    color: #FFD736;*/
+    content: "⮯" !important;
+    color: #FFD736;
 }
 .lg-toolbar .lg-close:after {
     content: "☒" !important;
@@ -196,38 +152,33 @@ nav ul :hover {
 #lg-counter {
     color: #FFD736;
 }
-.marketing-box{
-    display: flex;
-    width: 100%;
+
+.lg-backdrop.in {
+    opacity: 0.85;
 }
-.marketing-box-text {
-    display: flex;
-    align-items: center;
-    width: 25%; 
-    justify-content: center;
+.fixed-size.lg-outer .lg-inner {
+  background-color: #FFF;
 }
-.marketing-box-text-g{
-    width: 80%;
+.fixed-size.lg-outer .lg-sub-html {
+  position: absolute;
+  text-align: left;
 }
-.marketing-box-gallery {
-    display: flex;
-    justify-content: center;
-    width:75%;
+.fixed-size.lg-outer .lg-toolbar {
+  background-color: transparent;
+  height: 0;
 }
-.marketing-box-gallery-g{
-    width: 90%;
+.fixed-size.lg-outer .lg-toolbar .lg-icon {
+  color: #FFF;
 }
-.marketing-box-gallery-g ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: center;
-    gap:10px;
+.fixed-size.lg-outer .lg-img-wrap {
+  padding: 12px;
 }
-.marketing-box-gallery-g img {
-    border: 1px solid white; 
-    width: 220px;
-    height: 220px;
+#captions h4 {
+    color: #FFD736;
+}
+#captions img {
+    width: 200px;
+    height: 200px;
 }
 /*FRANCHISE*/
 .franchise {
