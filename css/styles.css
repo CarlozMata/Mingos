@@ -1,3 +1,13 @@
+:root {
+/*Tipografia*/
+    --h1: 28px;
+    --h2: 24px;
+    --h3: 20px;
+    --h4: 16px;
+/*Colores*/
+    --Mingos-color: #FFD736;
+    --White-color: aliceblue;
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -41,7 +51,7 @@ nav {
     width:100%;
     height: 100px;
     justify-content: center;
-    background-color: #FFD736;
+    background-color: var(--Mingos-color);
     align-items: center;
 }  
 .nav-box { 
@@ -67,12 +77,12 @@ nav ul :hover {
     color: gray;
 }
 .left {  
-    background-color: red;
-    width:25%;
+/*    background-color: red;
+*/    width:25%;
 }
 .right {
-    background-color: rebeccapurple;
-    width: 25%;
+/*    background-color: rebeccapurple;
+*/    width: 25%;
 } 
 
 /*BANNER*/
@@ -88,6 +98,7 @@ nav ul :hover {
     height: 520px; 
     animation: banner 20s infinite linear alternate;
     background-size: 100% 100%;
+    border-radius: 10px;
 } 
 
 @keyframes banner
@@ -117,7 +128,9 @@ nav ul :hover {
     flex-direction: column;
     justify-items: center;
     justify-content: center;
+    text-align: center;
     width: 100%;
+    margin-top: 25px;
 }
 .events-box2 {
     display: flex;
@@ -125,28 +138,23 @@ nav ul :hover {
 }
 .events img{       
     width: 80%;
-}
-.events-imgs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-}
+    border-radius: 10px;
 
+}
 /*MARKETING*/
 .marketing {
     display: flex;
-    background-color: #FFD736;
     justify-content: center;
+    background-color: var(--Mingos-color);
 }
 .lg-actions .lg-prev:after {
     content: "◀" !important;
-    color: #FFD736;
+    color: var(--Mingos-color);
  
 }
 .lg-actions .lg-next:before {
     content: "▶" !important;
-    color: #FFD736;
+    color: var(--Mingos-color);
 }
 .lg-toolbar .lg-download:after {
     display: none;
@@ -155,17 +163,17 @@ nav ul :hover {
 }
 .lg-toolbar .lg-close:after {
     content: "☒" !important;
-    color: #FFD736;
+    color: var(--Mingos-color);
 }
 #lg-counter {
-    color: #FFD736;
+    color: var(--Mingos-color);
 }
 
 .lg-backdrop.in {
     opacity: 0.85;
 }
 .fixed-size.lg-outer .lg-inner {
-  background-color: #FFF;
+  background-color:var(--White-color);
 }
 .fixed-size.lg-outer .lg-sub-html {
   position: absolute;
@@ -176,13 +184,13 @@ nav ul :hover {
   height: 0;
 }
 .fixed-size.lg-outer .lg-toolbar .lg-icon {
-  color: #FFF;
+  color:var(--White-color);
 }
 .fixed-size.lg-outer .lg-img-wrap {
   padding: 12px;
 }
 .lg-sub-html{
-    color: #FFD736;
+    color:var(--Mingos-color);
 }
 #captions img {
     width: 200px;
@@ -193,7 +201,7 @@ nav ul :hover {
     width: 100%;
     justify-content: center;
     align-items: center;
-
+    margin-top: 25px;
 }
 /*FRANCHISE*/
 .franchise {
@@ -216,7 +224,7 @@ nav ul :hover {
 .locations {
     display: flex;
     justify-content: center;
-    background-color: #FFD736;
+    background-color:var(--Mingos-color);
 }
 .locations-box {
     display: flex;
@@ -236,7 +244,7 @@ nav ul :hover {
 /*FOOTER*/
 footer {
     background-color: #232457;
-    color: aliceblue;
+    color: var(--White-color);
 }
 @media only screen and (max-width:1000px)
 {
@@ -254,12 +262,12 @@ footer {
     height: 400px;
 }   
 .events-gallery img {
-    border: 1px solid white; 
+    border: 1px solid var(--White-color); 
     width: 150px;
     height: 150px;
 }
 .marketing-box {
-    background-color:aliceblue;
+    background-color:var(--White-color);
 }
 .marketing-box-text{
     width: 100%;
@@ -270,7 +278,7 @@ footer {
     background-color: lawngreen;
 }
 .marketing-box-gallery-g img {
-    border: 1px solid white; 
+    border: 1px solid var(--White-color); 
     width: 105px;
     height: 105px;
 }
