@@ -78,12 +78,12 @@ nav ul :hover {
     color: gray;
 }
 .left {  
-/*    background-color: red;
-*/    width:25%;
+    background-color: red;
+    width:25%;
 }
 .right {
-/*    background-color: rebeccapurple;
-*/    width: 25%;
+    background-color: rebeccapurple;
+    width: 25%;
 } 
 
 /*BANNER*/
@@ -97,27 +97,35 @@ nav ul :hover {
     justify-items: center;
     width: 100%; 
     height: 520px; 
-    animation: banner 20s infinite linear alternate;
+    animation: banner 30s infinite linear alternate;
     background-size: 100% 100%;
     border-radius: 10px;
 } 
 
 @keyframes banner
-{ 
-    0%, 20% {
+{  
+    0%, 10% {
         background-image: url(../img/fotos/background1.jpg);
-    }   
-    25%, 50% {  
+    }    
+    15%, 25% {  
         background-image: url(../img/fotos/background2.jpg);
         }  
-    55%, 70% {
+    30%, 40% {
         background-image: url(../img/fotos/background3.jpg); 
     } 
-    75%, 100% {
+    45%, 55% {
         background-image: url(../img/fotos/background4.jpg);
     }
+    60%, 70% {
+        background-image: url(../img/fotos/background5.jpg);
+    }   
+    75%, 85% {  
+        background-image: url(../img/fotos/background6.jpg);
+        }  
+    90%, 100% {
+        background-image: url(../img/fotos/background7.jpg); 
+    } 
 }
-
 /*EVENTS*/
 .events {
     display: flex; 
@@ -137,10 +145,9 @@ nav ul :hover {
     display: flex;
     justify-content: center;
 }
-.events img{       
-    width: 80%;
+.events img{        
+    width: 80%;     
     border-radius: 10px;
-
 }
 /*MARKETING*/
 .marketing {
@@ -218,7 +225,7 @@ nav ul :hover {
 .franchise-box ul {
     padding: 20px;
     display: flex;
-    gap:25px;
+     gap:25px;
     flex-wrap: wrap;
 }
 /*UBICATION*/
@@ -245,8 +252,19 @@ nav ul :hover {
 } 
 /*FOOTER*/
 footer {
+    display: flex;
+    height: 40px;
+    width: 100%;
     background-color: #232457;
     color: var(--White-color);
+}
+.footer-box {
+    display: flex;
+    width: 100%;
+}
+ul {
+    display: flex;
+    list-style: none;
 }
 @media only screen and (max-width:1000px)
 {
@@ -269,19 +287,24 @@ nav img {
 }
 .left {  
     width:0%;
-    }
-    .right {
+}
+.right {
     width: 0%;
-    }   
+}   
+.img-whatsapp {
+    display: flex;
+    width: 40px; 
+    height: 40px;
 }
 .banners {
     width: 100%;  
-    height: 300px; 
+    height: 300px;  
     border-radius: 0px;
 } 
-.events img{       
-    width: 100%;
+
+.events img{        
     border-radius: 10px;
+    width: 100%;
 
 }
 
@@ -293,7 +316,7 @@ nav img {
 #captions img {
     width: 90px;
     height: 90px;
-}
+} 
 .marketing-box {
     display: flex;
     flex-direction: column;
