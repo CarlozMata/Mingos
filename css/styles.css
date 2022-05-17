@@ -71,7 +71,7 @@ nav ul {
 }
 nav img {
     width: 200px;
-    height: 90px; 
+    height: 140px; 
 }
 nav ul :hover {
     cursor: pointer;
@@ -115,16 +115,13 @@ nav ul :hover {
     } 
     45%, 55% {
         background-image: url(../img/fotos/background4.jpg);
-    }
-    60%, 70% {
+    } 
+    60%, 80% {
         background-image: url(../img/fotos/background5.jpg);
     }   
-    75%, 85% {  
+    85%, 100% {  
         background-image: url(../img/fotos/background6.jpg);
         }  
-    90%, 100% {
-        background-image: url(../img/fotos/background7.jpg); 
-    } 
 }
 /*EVENTS*/
 .events {
@@ -207,10 +204,12 @@ nav ul :hover {
 .marketing-box {
     display: flex;
     width: 100%;
-    justify-content: center;
-    align-items: center;
     margin-top: 25px;
 }
+.marketing-gallery {
+    display: flex;
+}
+
 /*FRANCHISE*/
 .franchise {
     background-color:var(--MingosLight-color);
@@ -282,8 +281,8 @@ nav {
     height: 50px; 
 }
 nav img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px; 
 }
 .left {  
     width:0%;
