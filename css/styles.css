@@ -249,44 +249,34 @@ footer {
 }
 @media only screen and (max-width:1000px)
 {
-body {
-    background-color: red;
-}
-.home img 
-{
-    width:100%;
-    height: 400px;
-}      
+    
+.left {  
+    width:10%;
+    }
+    .right {
+    width: 10%;
+    }   
 }
 @media (max-width: 510px)
 {
-.home img 
-{
-    width:100%;
-    height: 400px;
-}   
-.events-gallery img {
-    border: 1px solid var(--White-color); 
-    width: 150px;
-    height: 150px;
+nav {
+    height: 40px; 
 }
-.marketing-box {
-    background-color:var(--White-color);
+nav img {
+    width: 50px;
+    height: 50px;
 }
-.marketing-box-text{
-    width: 100%;
-    background-color: violet;
+.left {  
+    width:0%;
+    }
+    .right {
+    width: 0%;
+    }   
 }
-.marketing-box-gallery {
-    width: 100%;
-    background-color: lawngreen;
-}
-.marketing-box-gallery-g img {
-    border: 1px solid var(--White-color); 
-    width: 105px;
-    height: 105px;
-}
-}
+.banners {
+    width: 100%;  
+    height: 320px; 
+} 
 /*http://www.heladeriacadore.com.ar/index.html Banner 
 https://icecreamcitys.com/ Estructura
 
