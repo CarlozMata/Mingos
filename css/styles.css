@@ -5,7 +5,7 @@
     --h3: 20px;
     --h4: 16px;
 /*Colores*/
-    --Mingos-color: #FFD736;
+    --Mingos-color: #fce53c;
     --White-color: aliceblue;
     --MingosLight-color: rgb(243, 234, 152);
 }
@@ -32,8 +32,8 @@ body {
 nav a {
     margin: 0px;
     position: fixed;
-    margin-right: -85%;
-    margin-bottom: -160vh;
+    margin-right: -60%;
+    margin-bottom: -170vh;
 }
 a img:hover{
     opacity: 60%;
@@ -123,28 +123,54 @@ nav ul :hover {
         background-image: url(../img/fotos/background6.jpg);
         }  
 }
-/*EVENTS*/
-.events {
-    display: flex; 
-    background-color:var(--MingosLight-color);
-    width: 100%;
-}
-.events-box {
+
+
+.banners2 {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     justify-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin-top: 25px;
+    width: 300px; 
+    height: 500px; 
+    animation: banner2 30s infinite linear alternate;
+    background-size: 100% 100%;
+    border-radius: 10px; 
+} 
+
+@keyframes banner2 
+{  
+    0%, 10% {
+        background-image: url(../img/fotos/vertical1.jpg);
+    }    
+    15%, 25% {  
+        background-image: url(../img/fotos/vertical2.jpg);
+        }  
+    30%, 40% {
+        background-image: url(../img/fotos/vertical3.jpg); 
+    } 
+    45%, 55% {
+        background-image: url(../img/fotos/vertical4.jpg);
+    } 
+    60%, 80% {
+        background-image: url(../img/fotos/vertical5.jpg);
+    }   
+    85%, 100% {   
+        background-image: url(../img/fotos/vertical3.jpg);
+        }  
 }
-.events-box2 {
+
+/*ABOUT US*/
+.aboutUs {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+    width: 100%;
 }
-.events img{        
-    width: 80%;     
-    border-radius: 10px;
+.about-box {
+    display: flex;
+    word-wrap: break-word;
+}
+.aboutUs img {       
+    width: 80px;
+    height: 80px;
 }
 /*MARKETING*/
 .marketing {
@@ -210,6 +236,31 @@ nav ul :hover {
     display: flex;
 }
 
+/*EVENTS*/
+.events {
+    display: flex; 
+    background-color:var(--MingosLight-color);
+    width: 100%;
+}
+.events-box {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
+}
+.events-box2 {
+    display: flex;
+    justify-content: center;
+}
+.events img{        
+    width: 80%;     
+    border-radius: 10px;
+}
+
+
 /*FRANCHISE*/
 .franchise {
     background-color:var(--MingosLight-color);
@@ -274,11 +325,19 @@ ul {
     .right {
     width: 10%;
     }   
+nav a {
+    margin-right: -72%;
+    margin-bottom: -170vh;
+}
 }
 @media (max-width: 510px)
 {
 nav { 
     height: 50px; 
+}
+nav a {
+    margin-right: -80%;
+    margin-bottom: -170vh;
 }
 nav img {
     width: 60px;
@@ -311,6 +370,10 @@ nav img {
     display: flex;
     justify-content: center;
     background-color: var(--Mingos-color);
+}
+#captions {
+    justify-content: center;
+    justify-items: center;
 }
 #captions img {
     width: 90px;
