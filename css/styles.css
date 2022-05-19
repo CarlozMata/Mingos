@@ -29,54 +29,52 @@ body {
     margin: 5px 2px;
     border-radius: 50%;
     }
-nav a {
-    margin: 0px;
-    position: fixed;
-    margin-right: -60%;
-    margin-bottom: -170vh;
-}
-a img:hover{
-    opacity: 60%;
-    width: 70px; 
-    height: 70px;
-}
-.img-whatsapp {
-    display: flex;
-    width: 60px;
-    height: 60px;
-}
 
-/*NAV*/
+/*NAV*/ 
 nav {
-    display: flex;
-    width:100%;
-    height: 100px;
-    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 50px;   
     background-color: var(--Mingos-color);
-    align-items: center;
-}  
-.nav-box { 
-    align-content: center;
-    width: 90%;
-}
-nav ul {
     display: flex;
-    text-align: center;
-    list-style: none;
-    gap: 20px;
-    font-weight: bold;
-    justify-content:space-evenly;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 0px;
 }
-nav img {
-    width: 200px;
-    height: 140px; 
+header {
+    width: 100%;
 }
-nav ul :hover {
+.menu {
+    display: flex;
+}
+.menu li {
+    list-style: none;
+    margin: 0 15px;
+}  
+.menu .menu-i {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.menu .menu-i:hover {
+    color:#0000;
+}
+.menu-btn {
     cursor: pointer;
-    color: gray;
+    display: none;
+    transition: all 0.3s ease;
+
+} 
+
+.menu-btn img { 
+    width: 30px;  
+    height: 30px;  
+    transition: all 0.3s ease;
 }
+.logo img {
+    width: 80px;
+}
+/*ASIDE*/
 .left {  
     background-color: red;
     width:25%;
@@ -100,6 +98,7 @@ nav ul :hover {
     animation: banner 30s infinite linear alternate;
     background-size: 100% 100%;
     border-radius: 10px;
+    margin-top: 45px;
 } 
 
 @keyframes banner
@@ -294,6 +293,7 @@ nav ul :hover {
 /*UBICATION*/
 .locations {
     display: flex;
+    width: 100%;
     justify-content: center;
     background-color:var(--Mingos-color);
 }
@@ -301,6 +301,12 @@ nav ul :hover {
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
+}
+iframe {
+    display: flex;
+    width: 400px;
+    height: 400px;
 }
 
 /*CONTACT*/
@@ -320,48 +326,60 @@ footer {
     width: 100%;
     background-color: #232457;
     color: var(--White-color);
-}
+} 
 .footer-box {
     display: flex;
     width: 100%;
 }
-ul {
+footer ul {
     display: flex;
     list-style: none;
 }
 @media only screen and (max-width:1000px)
-{
-    
+{  
 .left {  
-    width:10%;
-    }
-    .right {
-    width: 10%;
-    }   
-nav a {
-    margin-right: -72%;
-    margin-bottom: -170vh;
+width:10%;
 }
+.right {
+width: 10%;
+}   
+nav {
+    justify-content: space-around;
+    height: 50px;   
+} 
+.menu-btn { 
+    display: block;
 }
-@media (max-width: 510px)
+.menu {
+    position:fixed;
+    top:50px; 
+    left: 0;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    line-height: 100px;
+    transform: translateX(-100%);
+}
+.menu.active {
+    transform: translateX(0);
+}
+
+}
+@media (max-width: 510px) 
 {
-nav { 
-    height: 50px; 
-}
-nav a {
-    margin-right: -80%;
-    margin-bottom: -170vh;
-}
-nav img {
-    width: 60px;
-    height: 60px; 
-}
 .left {  
     width:0%;
 }
 .right {
     width: 0%;
 }   
+nav {
+    justify-content: space-between;
+    height: 50px;   
+    
+} 
 .img-whatsapp {
     display: flex;
     width: 40px; 
