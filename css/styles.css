@@ -268,7 +268,7 @@ header {
 /*EVENTS*/
 .events {
     display: flex; 
-    background-color:var(--MingosLight-color);
+    background-color:var(--Mingos-color);
     width: 100%;
 }
 .events-box {
