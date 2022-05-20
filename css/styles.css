@@ -16,12 +16,14 @@
 */
 } 
 body {
-    font-family: 'Parisienne', cursive;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Lato', sans-serif;
 }
 
-
+html {
+    scroll-behavior: smooth;
+  }
+  
 /*NAV*/ 
 .nav-logo {
     position: fixed;
@@ -45,19 +47,18 @@ header {
     list-style: none;
     margin: 0 15px;
 }  
-.menu .menu-i {
+.menu .menu_i {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
-.menu .menu-i:hover {
+.menu .menu_i:hover {
     color:#0000;
 }
 .menu-btn {
     cursor: pointer;
     display: none;
     transition: all 0.3s ease;
-
 } 
 
 .menu-btn img { 
@@ -141,6 +142,12 @@ header {
     align-items: center;
     gap:20px
 }
+.about-box2 h1 {
+}
+.about-box2 p { 
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;;
+} 
 .aboutUs img { 
     width: 400px;
     height: 300px;
@@ -204,6 +211,7 @@ header {
     display: flex;
     text-align: center;
     width: 80%;
+    margin-top: 5px;
 }
 #captions img {
     width: 250px;
@@ -399,6 +407,7 @@ width: 10%;
     flex-direction: column;
     align-items: center;
     line-height: 100px;
+    transition: all 0.5s ease;
     transform: translateX(-100%);
 }
 .menu.active {
