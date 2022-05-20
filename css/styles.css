@@ -53,7 +53,7 @@ header {
     font-weight: bold;
 }
 .menu .menu_i:hover {
-    color:#0000;
+    color: gray;
 }
 .menu-btn {
     cursor: pointer;
