@@ -20,15 +20,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Lato', sans-serif;
 }
-/*WHATSAPP*/
-.whatsapp {
-    padding: 20px;
-    font-size: 30px;
-    text-align: center; 
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    }
+
 
 /*NAV*/ 
 .nav-logo {
@@ -128,12 +120,58 @@ header {
 }
 
 
+/*ABOUT US*/
+.aboutUs {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    background-color:var(--MingosLight-color);
+
+}
+.about-box {
+    display: flex;
+    margin-top: 25px;
+    word-wrap: break-word;
+    width: 100%;
+    text-align: justify;
+    justify-content: center;
+}
+.about-box2 {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    gap:20px
+}
+.aboutUs img { 
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+}
+/*MARKETING*/
+.marketing {
+    display: flex;
+    background-color: var(--Mingos-color);
+}
+.marketing-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 25px;
+}
+
+
 .banners2 {
     display: flex;
     justify-content: center;
     justify-items: center;
-    width: 300px; 
-    height: 500px; 
+    width: 400px; 
+    height: 600px;
+    margin-top: 20px; 
     animation: banner2 30s infinite linear alternate;
     background-size: 100% 100%;
     border-radius: 10px; 
@@ -161,38 +199,18 @@ header {
         }  
 }
 
-/*ABOUT US*/
-.aboutUs {
-    display: flex;
-    justify-content: center; 
-    width: 100%;
-    background-color:var(--MingosLight-color);
 
-}
-.about-box {
+
+.marketing-gallery {
     display: flex;
-    margin-top: 25px;
-    word-wrap: break-word;
-    width: 100%;
-    text-align: justify;
-    justify-content: center;
-}
-.about-box2 {
-    display: flex;
+    text-align: center;
     width: 80%;
-    flex-direction: column;
-    align-items: center;
-    gap:20px
 }
-.aboutUs img { 
-    width: 400px;
-    height: 300px;
-}
-/*MARKETING*/
-.marketing {
-    display: flex;
-    justify-content: center;
-    background-color: var(--Mingos-color);
+#captions img {
+    width: 250px;
+    height: 250px;
+    margin-top: 5px;
+    border:1px solid black; 
 }
 .lg-actions .lg-prev:after {
     content: "◀" !important;
@@ -239,18 +257,6 @@ header {
 .lg-sub-html{
     color:var(--Mingos-color);
 }
-#captions img {
-    width: 200px;
-    height: 200px;
-}
-.marketing-box {
-    display: flex;
-    width: 100%;
-    margin-top: 25px;
-}
-.marketing-gallery {
-    display: flex;
-}
 
 /*EVENTS*/
 .events {
@@ -286,7 +292,8 @@ header {
 .franchise-box {
     display: flex;
     width: 100%;
-    flex-direction: column;
+    flex-direction: column;    margin-top: 25px;
+
 }
 .franchise-box ul {
     padding: 20px;
@@ -305,7 +312,9 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: center;
+    align-items: center;   
+    margin-top: 25px;
+
 }
 iframe {
     display: flex;
@@ -320,8 +329,8 @@ iframe {
     background-color:var(--MingosLight-color);
 }
 .contact-box {
-    width: 100%;
-
+    width: 100%;    
+    margin-top: 25px;
 } 
 /*FOOTER*/
 footer {
@@ -338,6 +347,33 @@ footer {
 footer ul {
     display: flex;
     list-style: none;
+}
+/*WHATSAPP*/
+/*.whatsapp {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center; 
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    margin-top: 100px;
+    }
+*/
+.whatsapp {
+    position: fixed;    
+    display: flex;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+} 
+.img-whatsapp {
+    width: 50px; 
+}
+.whatsapp:hover {
+    opacity: 0.7;
+    width: 100px; 
 }
 @media only screen and (max-width:1000px)
 {  
@@ -384,11 +420,7 @@ width: 10%;
     height: 50px;   
     
 } 
-.img-whatsapp {
-    display: flex;
-    width: 40px; 
-    height: 40px;
-}
+
 .banners {
     width: 100%;  
     height: 300px;  
