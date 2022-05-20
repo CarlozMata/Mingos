@@ -129,7 +129,7 @@ header {
 }
 .about-box {
     display: flex;
-    margin-top: 25px;
+    margin-top: 50px;
     word-wrap: break-word;
     width: 100%;
     text-align: justify;
@@ -166,7 +166,7 @@ header {
     justify-items: center;
     align-items: center;
     align-content: center;
-    margin-top: 25px;
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -278,7 +278,7 @@ header {
     justify-content: center;
     text-align: center;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 50px;
 }
 .events-box2 {
     display: flex;
@@ -320,7 +320,7 @@ header {
     flex-direction: column;
     width: 100%;
     align-items: center;   
-    margin-top: 25px;
+    margin-top: 50px;
 
 }
 iframe {
@@ -337,7 +337,7 @@ iframe {
 }
 .contact-box {
     width: 100%;    
-    margin-top: 25px;
+    margin-top: 50px;
 } 
 /*FOOTER*/
 footer {
