@@ -297,11 +297,13 @@ header {
     background-color:var(--MingosLight-color);
     display: flex;
     justify-content: center;
+    
 }
 .franchise-box {
     display: flex;
     width: 100%;
-    flex-direction: column;    margin-top: 25px;
+    flex-direction: column;    
+    margin-top: 50px;
 
 }
 .franchise-box ul {
@@ -362,18 +364,25 @@ iframe {
 /*FOOTER*/
 footer {
     display: flex;
-    height: 40px;
+    height: 35px;
     width: 100%;
     background-color: #232457;
-    color: var(--White-color);
 } 
 .footer-box {
     display: flex;
     width: 100%;
-}
+       
+} 
 footer ul {
     display: flex;
     list-style: none;
+    
+}
+footer li {
+    display: flex;
+}
+footer a{
+    color: var(--White-color);
 }
 .whatsapp {
     position: fixed;    
