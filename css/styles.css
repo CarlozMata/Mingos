@@ -356,32 +356,22 @@ footer ul {
     display: flex;
     list-style: none;
 }
-/*WHATSAPP*/
-/*.whatsapp {
-    padding: 20px;
-    font-size: 30px;
-    text-align: center; 
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    margin-top: 100px;
-    }
-*/
 .whatsapp {
     position: fixed;    
-    bottom:0;
+    bottom:40px;
+    right: 18%; 
     font-size: 30px;
     text-align: center;
     text-decoration: none;   
     border-radius: 50%;  
 }
 .img-whatsapp {
-    width: 50px; 
+    width: 40px; 
 }
 .whatsapp:hover {
     opacity: 0.7;
-    width: 100px; 
 }
+
 @media only screen and (max-width:1000px)
 {  
 .left {  
@@ -413,7 +403,9 @@ width: 10%;
 .menu.active {
     transform: translateX(0);
 }
-
+.whatsapp {
+    right: 10%; 
+}
 }
 @media (max-width: 510px) 
 {
@@ -470,6 +462,11 @@ iframe {
     width: 100%;
     height: 50%;
 }
+.img-whatsapp {
+    width: 40px; 
+    height: 40px;
+}  
+
 }
 /*http://www.heladeriacadore.com.ar/index.html Banner 
 https://icecreamcitys.com/ Estructura

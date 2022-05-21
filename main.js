@@ -22,13 +22,20 @@ menu4.addEventListener('click', () => {
 })
 const menu5 = document.querySelector('.menu5');
 menu5.addEventListener('click', () => {
-    menu.classList.toggle('active')
+    menu.classList.toggle('active') 
 })
 const menu6 = document.querySelector('.menu6');
 menu6.addEventListener('click', () => {
     menu.classList.toggle('active')
 })
-                        
+
+function ocultarWhatsapp() { 
+    document.getElementById('whatsappOnOff').style.display = 'none';
+} 
+function mostrarWhatsapp() {
+    document.getElementById('whatsappOnOff').style.display = "block";
+} 
+  
          
 document.addEventListener('DOMContentLoaded', () => {
     const imgLightBox = document.querySelectorAll('materialboxed');
