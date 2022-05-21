@@ -28,6 +28,10 @@ const menu6 = document.querySelector('.menu6');
 menu6.addEventListener('click', () => {
     menu.classList.toggle('active')
 })
+const menu7 = document.querySelector('.menu7');
+menu7.addEventListener('click', () => {
+    menu.classList.toggle('active')
+})
 
 function ocultarWhatsapp() { 
     document.getElementById('whatsappOnOff').style.display = 'none';
