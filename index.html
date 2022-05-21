@@ -19,16 +19,16 @@
     <div class="logo">
         <img src="./img/logotipoMingos.png">
     </div>
-    <ul class="menu">
-        <li><a href="#inicio" class="menu_i menu1">Inicio</a></li>
-        <li><a href="#sobreNosotros" class="menu_i menu2">Sobre Nosotros</a></li>
-        <li><a href="#galeria" class="menu_i menu3">Galeria de Fotos</a></li> 
-        <li><a href="#eventos" class="menu_i menu4">Eventos</a></li>
-        <li><a href="#sucursal" class="menu_i menu5">Sucursales</a></li>
-        <li><a href="#contacto" class="menu_i menu6">Contactanos</a></li> 
+    <ul class="menu" >
+        <li onclick="mostrarWhatsapp();"><a href="#inicio" class="menu_i menu1">Inicio</a></li>
+        <li onclick="mostrarWhatsapp();"><a href="#sobreNosotros" class="menu_i menu2">Sobre Nosotros</a></li>
+        <li onclick="mostrarWhatsapp();"><a href="#galeria" class="menu_i menu3">Galeria de Fotos</a></li> 
+        <li onclick="mostrarWhatsapp();"><a href="#eventos" class="menu_i menu4">Eventos</a></li>
+        <li onclick="mostrarWhatsapp();"><a href="#sucursal" class="menu_i menu5">Sucursales</a></li>
+        <li onclick="mostrarWhatsapp();"><a href="#contacto" class="menu_i menu6">Contactanos</a></li> 
     </ul>
-    <div class="menu-btn"> 
-        <img src="./img/iconos/menu4.png">           
+    <div class="menu-btn">  
+        <img src="./img/iconos/menu4.png" onclick="ocultarWhatsapp(); ">           
     </div>
 </nav>
 </header>
@@ -190,7 +190,7 @@
     <h2>México desde $485,000 MXN</h2>
     <h3>Horarios de Atención:</h3>
     <h4>Lunes a Viernes de 9am a 18:00</h4>
-    <a class="whatsapp" href="https://wa.me/+529931079507/?text=Hola,%20visite%20visite%20su%20Sitio%20web" target="_blank"><img class="img-whatsapp" src="./img/logo-wasap.png" width="50" height="50"></a>
+    <a class="whatsapp" id="whatsappOnOff" href="https://wa.me/+529931079507/?text=Hola,%20visite%20visite%20su%20Sitio%20web" target="_blank"><img class="img-whatsapp" src="./img/logo-wasap.png" width="50" height="50"></a>
     </div>
     <aside class="right"></aside>
 </section>
