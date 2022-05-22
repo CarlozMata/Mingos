@@ -73,19 +73,22 @@ header {
 }
 /*ASIDE*/
 .left {  
-    background-color: red;
+    background-color: transparent;
     width:25%;
 }
 .right {
-    background-color: rebeccapurple;
+    background-color: transparent;
     width: 25%;
 } 
-
+.asideBanner {
+    background-color:var(--Mingos-color);
+}
 /*BANNER*/
 .main {
     display: flex;
     background-color: black;
 }
+
 .banners {
     display: flex;
     justify-content: center;
@@ -94,7 +97,6 @@ header {
     height: 520px; 
     animation: banner 30s infinite linear alternate;
     background-size: 100% 100%;
-    border-radius: 10px;
     margin-top: 45px;
 }  
 
