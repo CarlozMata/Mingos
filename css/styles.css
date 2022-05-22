@@ -304,13 +304,22 @@ header {
     width: 100%;
     flex-direction: column;    
     margin-top: 50px;
-
+    text-align: center;
+    align-items: center;
+}
+.franchise-box p {
+    text-align: justify;
+}
+.franchise-box2 { 
+    width: 80%;
 }
 .franchise-box ul {
-    padding: 20px;
+    margin-top: 20px;
+    padding: 0px;
     display: flex;
-     gap:25px;
+     gap:5px;
     flex-wrap: wrap;
+    text-align: left;
 }
 /*UBICATION*/
 .locations {
@@ -360,7 +369,11 @@ iframe {
 .contact-box {
     width: 100%;    
     margin-top: 50px;
+    text-align: center;
 } 
+.contact-box h3 {
+    margin-top: 20px;
+}
 /*FOOTER*/
 footer {
     display: flex;
