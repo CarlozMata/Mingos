@@ -146,8 +146,6 @@ header {
     align-items: center;
     gap:20px
 }
-.about-box2 h1 {
-}
 .about-box2 p { 
     font-size: 14px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;;
@@ -157,6 +155,7 @@ header {
     width: 100%;
     height: auto;
     border: 1px solid black;
+    margin-bottom: 50px;
 }
 /*MARKETING*/
 .marketing {
@@ -290,7 +289,8 @@ header {
 }
 .events img{        
     width: 80%;     
-    border-radius: 10px;
+    border-radius: 10px;    margin-bottom: 50px;
+
 }
 
 
@@ -324,6 +324,8 @@ header {
     gap:0px;
     flex-wrap: wrap;
     text-align: left;
+    margin-bottom: 50px;
+
 }
 /*UBICATION*/
 .locations {
@@ -357,6 +359,8 @@ header {
 }
 .locations-box2 {
     width: 80%;
+    margin-bottom: 50px;
+
 }
 iframe {
     display: flex;
@@ -374,6 +378,8 @@ iframe {
     width: 100%;    
     margin-top: 50px;
     text-align: center;
+    margin-bottom: 50px;
+
 } 
 .contact-box h3 {
     margin-top: 20px;
@@ -381,25 +387,25 @@ iframe {
 /*FOOTER*/
 footer {
     display: flex;
+    align-items: center;
     height: 35px;
     width: 100%;
-    background-color: #232457;
+    background-color: white;
 } 
 .footer-box {
-    display: flex;
-    width: 100%;
-       
+    width: 100%;      
 } 
 footer ul {
     display: flex;
+    justify-content: space-evenly;
     list-style: none;
-    
 }
 footer li {
     display: flex;
 }
 footer a{
-    color: var(--White-color);
+    color: black;
+    font-weight: bold;
 }
 .whatsapp {
     position: fixed;    
@@ -520,10 +526,3 @@ iframe {
 }
 
 }
-/*http://www.heladeriacadore.com.ar/index.html Banner 
-https://icecreamcitys.com/ Estructura
-
-https://heladosricco.com
-
-https://lamichoacanaweb.com/landing/franquicias-la-michoacana-es/#contacto-2 El resto
-*/
