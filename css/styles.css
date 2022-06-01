@@ -315,11 +315,13 @@ header {
 .franchise-box2 { 
     width: 80%;
 }
-.franchise-box ul {
-    margin-top: 20px;
+.franchise-box2 ul {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 25px 40px;
     padding: 0px;
     display: flex;
-     gap:5px;
+    gap:0px;
     flex-wrap: wrap;
     text-align: left;
 }
@@ -409,7 +411,8 @@ footer a{
     border-radius: 50%;  
 }
 .img-whatsapp {
-    width: 40px; 
+    width: 50px; 
+    width: 50px; 
 }
 .whatsapp:hover {
     opacity: 0.7;
