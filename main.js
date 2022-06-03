@@ -36,17 +36,7 @@ menu7.addEventListener('click', () => {
 function ocultarWhatsapp() { 
     document.getElementById('whatsappOnOff').style.display = 'none';
 } 
-function mostrarWhatsapp() {
+function mostrarWhatsapp() { 
     document.getElementById('whatsappOnOff').style.display = "block";
 } 
   
-         
-document.addEventListener('DOMContentLoaded', () => {
-    const imgLightBox = document.querySelectorAll('materialboxed');
-    M.Materialbox.init(imgLightBox);
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.materialboxed');
-    var instances = M.Materialbox.init(elems, options);
-  });

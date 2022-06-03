@@ -1,10 +1,8 @@
 :root {
-/*Tipografia*/
     --h1: 28px;
     --h2: 24px;
     --h3: 20px;
     --h4: 16px;
-/*Colores*/
     --Mingos-color: #fce53c;
     --White-color: aliceblue;
     --MingosLight-color: rgb(243, 234, 152);
@@ -12,8 +10,6 @@
 * {
     margin: 0px;
     padding: 0px;
-/*    border: 1px solid yellow;
-*/
 } 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -23,6 +19,12 @@ body {
 html {
     scroll-behavior: smooth;
   }
+hr {
+    color: grey;
+    background-color: transparent;
+    width: 80%;
+    margin: 40px auto;
+}
   
 /*NAV*/ 
 .nav-logo {
@@ -46,7 +48,6 @@ header {
 .menu li {
     list-style: none;
     margin: 0 15px;
-    
 }  
 .menu .menu_i {
     text-decoration: none;
@@ -62,7 +63,6 @@ header {
     transition: all 0.3s ease;
     margin-right: 10px;
 } 
-
 .menu-btn img { 
     width: 30px;  
     height: 30px;  
@@ -88,7 +88,6 @@ header {
     display: flex;
     background-color: black;
 }
-
 .banners {
     display: flex;
     justify-content: center;
@@ -99,7 +98,6 @@ header {
     background-size: 100% 100%;
     margin-top: 45px;
 }  
-
 @keyframes banner
 {  
     0%, 10% {
@@ -121,15 +119,13 @@ header {
         background-image: url(../img/fotos/background6_520x800.jpg);
         }  
 }
-
-
 /*ABOUT US*/
 .aboutUs {
     display: flex;
     justify-content: center; 
     width: 100%;
-    background-color:var(--MingosLight-color);
-
+    background-color:var(--Mingos-color);
+    border-bottom: 1px solid rgb(145, 145, 145);
 }
 .about-box {
     display: flex;
@@ -160,7 +156,7 @@ header {
 /*MARKETING*/
 .marketing {
     display: flex;
-    background-color: var(--Mingos-color);
+    background-color: var(--MingosLight-color);
 }
 .marketing-box {
     display: flex;
@@ -173,8 +169,6 @@ header {
     margin-top: 50px;
     text-align: center;
 }
-
-
 .banners2 {
     display: flex;
     justify-content: center;
@@ -186,7 +180,6 @@ header {
     background-size: 100% 100%;
     border-radius: 10px; 
 } 
-
 @keyframes banner2 
 {  
     0%, 10% {
@@ -208,9 +201,6 @@ header {
         background-image: url(../img/fotos/vertical3.jpg);
         }  
 }
-
-
-
 .marketing-gallery {
     display: flex;
     text-align: center;
@@ -267,12 +257,12 @@ header {
 .lg-sub-html{
     color:var(--Mingos-color);
 }
-
 /*EVENTS*/
 .events {
     display: flex; 
-    background-color:var(--Mingos-color);
+    background-color:var(--MingosLight-color);
     width: 100%;
+    border-bottom: 1px solid rgb(145, 145, 145);
 }
 .events-box {
     display: flex;
@@ -290,16 +280,13 @@ header {
 .events img{        
     width: 80%;     
     border-radius: 10px;    margin-bottom: 50px;
-
 }
-
-
 /*FRANCHISE*/
 .franchise {
-    background-color:var(--MingosLight-color);
+    background-color:var(--Mingos-color);
     display: flex;
     justify-content: center;
-    
+    border-bottom: 1px solid rgb(145, 145, 145);
 }
 .franchise-box {
     display: flex;
@@ -332,7 +319,8 @@ header {
     display: flex;
     width: 100%;
     justify-content: center;
-    background-color:var(--Mingos-color);
+    background-color:var(--MingosLight-color);
+    border-bottom: 1px solid rgb(145, 145, 145);
 }
 .locations-box {
     display: flex;
@@ -360,37 +348,38 @@ header {
 .locations-box2 {
     width: 80%;
     margin-bottom: 50px;
-
 }
 iframe {
     display: flex;
     width: 400px;
     height: 400px; 
 }
-
 /*CONTACT*/
 .contact {
     display: flex;
     justify-content: center;
-    background-color:var(--MingosLight-color);
+    background-color:var(--Mingos-color);
+}
+.contact-box h1 {
+    font-size: 30px;
+}
+.contact-box h2 {
+    margin-top: 40px;
+    font-size: 20px;
 }
 .contact-box {
     width: 100%;    
-    margin-top: 50px;
+    margin-top: 70px;
     text-align: center;
-    margin-bottom: 50px;
-
+    margin-bottom: 80px;
 } 
-.contact-box h3 {
-    margin-top: 20px;
-}
 /*FOOTER*/
 footer {
     display: flex;
     align-items: center;
     height: 35px;
     width: 100%;
-    background-color: white;
+    background-color: black;
 } 
 .footer-box {
     width: 100%;      
@@ -404,7 +393,7 @@ footer li {
     display: flex;
 }
 footer a{
-    color: black;
+    color: white;
     font-weight: bold;
 }
 .whatsapp {
@@ -423,7 +412,6 @@ footer a{
 .whatsapp:hover {
     opacity: 0.7;
 }
-
 @media only screen and (max-width:1000px)
 {  
 .left {  
@@ -470,7 +458,6 @@ width: 10%;
 .nav-logo {
     justify-content: space-between;
     height: 50px;   
-    
 } 
 .banners {
     width: 100%;  
@@ -486,7 +473,6 @@ width: 10%;
     width: 100%;
 
 }
-
 .marketing {
     display: flex;
     justify-content: center;
